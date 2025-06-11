@@ -17,7 +17,7 @@ def save_report_as_pdf(content):
     pdf.add_page()
     pdf.set_auto_page_break(auto=True, margin=15)
 
-    font_path = os.path.join(os.path.dirname(__file__), "DejaVuSans.pkl")
+    font_path = os.path.join(os.path.dirname(__file__), "DejaVuSans.ttf")
     pdf.add_font("DejaVu", "", font_path, uni=True)
     pdf.set_font("DejaVu", size=12)
 
